@@ -1,0 +1,89 @@
+
+:root {
+    /* --primarycolor: hsl(26, 93%, 50%);
+    --hovercolor: hsl(26, 90%, 42%); */
+
+    --primarycolor: hsl(26, 93%, 50%);
+    --spancolo: #0e0e70f0;
+    --hovercolor: hsl(197, 90%, 42%);
+    // --hovercolor: hsl(26, 90%, 42%);
+    --whitecolor: hsl(0, 0%, 100%);
+    --blackcolor: hsl(0, 0%, 18%);
+    --textycolor: hsl(240, 1%, 48%);
+    --grayBg: hsl(0, 0%, 96%);
+    --graytext: rgb(190, 190, 190);
+    --whitecolorDream: hsl(330, 12%, 97%);
+    --inputColor: hsl(330, 12%, 97%);
+    // background: linear-gradient(180deg, #cdc6ce, #e1ffea22 60%);
+    // box-shadow: 0 1px 3px -2px black;
+}
+.hero-right{
+.image{
+    height: 650px;
+    width: 550px;
+    margin: auto;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #cdc6ce, #e1ffea22 60%);
+    display: flex;
+
+    .hero-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 180px;
+        line-height: 1.1;
+
+      
+        p{
+            color: var(--blackcolor);
+            font-size: 80px;
+            font-weight: 700;
+        }
+
+        .hero-hand-icon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 100px;
+            }
+            h2 {
+                color: var(--blackcolor);
+                font-size: 26px;
+                font-weight: 600;
+            }
+            
+        }
+
+        .hero-latest-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 310px;
+            height: 70px;
+            border-radius: 75px;
+            margin-top: 30px;
+            background: var(--primarycolor);
+            color: var(--whitecolor);
+            font-size: 22px;
+            font-weight: 500;
+            &:hover{
+            background: var(--hovercolor);
+            }
+
+        }
+    }
+
+}
